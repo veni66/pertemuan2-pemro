@@ -10,6 +10,7 @@ uploaded_file = st.file_uploader("Pilih file CSV", type="csv")
 
 if uploaded_file is not None:
     # Membaca dataset
+    
     df = pd.read_csv(uploaded_file)
     
     # Menampilkan header kolom
